@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+html{
+scroll-behavior:smooth;
+}
+body{
+    background-color:black;
+}
+
+
+*:after , *:before{
+    padding:0;
+    margin:0;
+
+/*  ---------- Header ----------*/
+
+
+}
+
+div{
+    display:block;
+}
+
+.contact{
+  z-index:9;
+}
+
+
+
+.emre img{
+
+    float:right;
+    width:600px;
+    height: 720px;
+}
+
+.header{
+    display:block;
+    height:100vh;
+    width:100vw;
+
+}
+
+
+
+.hero{
+    position: relative;
+    top: 25%;
+    left: 10%;
+    width: 500px;
+    height: 200px;
+
+
+
+}
+
+
+/*  ---------- Works  ---------- */
+
+.projects-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-gap: 4rem;
+    color: #000;
+    margin-top: 6rem;
+}
+
+
+.project-box{
+
+    padding: 2rem;
+    height: 20rem;
+    width:30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color:red;
+}
+
+.project-box:hover p{
+  color:white;
+}
+
+.works-h3{
+
+   font-size: 40px;
+   text-align:center;
+
+}
+
+.works-p{
+  position:absolute;
+  font-size: 15px;
+  bottom:5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+
+}
+
+.project-box:hover{
+
+  background-color:black;
+  border:2px solid white;
+  cursor:pointer;
+
+}
+
+
+
+/*  ---------- About me    ---------- */
+
+.about_wrapper{
+  display:inline-block;
+
+
+}
+
+.about_section{
+  display:block;
+  margin-top:6vh;
+}
+
+
+
+.about_p {
+  cursor:pointer;
+  position:relative;
+  font-size: 16px;
+  display:inline-block;
+  padding-top:40%;
+  width:10vw;
+  height:20vh;
+  text-align: center;
+  background-color: #00FF44;
+  color: white;
+  border: solid 1px white;
+  margin:0;
+}
+
+
+.about_div {
+  position:absolute;
+  margin:0;
+  visibility:hidden;
+  display:inline-block;
+  background-color: #017520;
+  border-right:solid 1px white;
+  border-bottom:solid 1px white;
+  border-top:solid 1px white;
+  border-left:none;
+  width:70vw;
+  height:20vh;
+
+}
+
+.about_div p{
+  text-align:left;
+  padding:5px;
+  color:black;
+}
+
+/*  ---------- h1 effect code ----------*/
+
+.header1{
+  padding-bottom:30px;
+  padding-right:90px;
+  float:left;
+	background-image: url(https://64.media.tumblr.com/2d23e578732392023b25d921d9ebd021/tumblr_oesguouE6X1runoqyo6_r1_540.gifv);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	font-size: 90px;
+	line-height: .75;
+	margin: 10px 0;
+}
+
+/*  ---------- h1 effect code ----------*/
+
+.header5{
+    text-align:left;
+    color:white;
+
+}
+
+.works{
+    height:100vh;
+    width:100vw;
+}
+
+.about{
+    height:100vh;
+    width:100vw;
+}
+
+.social{
+   height:100vh;
+   width:100vw;
+}
+
+.hero_me{
+    font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
+    color:#F70405;
+}
+
+.hero_about{
+    font-family: 'Montserrat', sans-serif;
+
+    color:#524F4F;
+}
+
+/*  ---------- main   ---------- */
+
+main section,main section{
+  padding-left:200px;
+}
+
+main h2{
+  color:white;
+  padding-top:20px;
+}
+
+main h5{
+  font-size:20px;
+}
+
+
+
+/*  ---------- links  ---------- */
+
+span{
+  position: relative;
+
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "Contact Me";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #000;
+  background: #00ff44;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #00ff44;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+/*  ---------- links  ---------- */
+
+.link-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-gap: 30px;
+    color: #000;
+    margin-top: 6rem;
+}
+
+.wrapper{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper a{
+  display: block;
+  width: 250px;
+  height: 200px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #000;
+border-bottom: 10px solid #FD842C;
+  background-image: url(insta-back.jpg);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.wrapper a span{
+  position: absolute;
+  left:0;
+  top:120px;
+  z-index: 2;
+}
+
+.wrapper a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  transition: all .35s;
+}
+
+.wrapper a:hover{
+
+  color: #fff;
+}
+
+.wrapper a:hover:after{
+
+  width: 100%;
+}
+
+.wrapper .linkedin{
+  border-bottom: 10px solid #2867B2;
+  background: #2867B2;
+}
+
+.wrapper img{
+  max-width:65px;
+  height:auto;
+  padding:10px;
+  float:right;
+}
+
+.wrapper .github{
+  border-bottom: 10px solid #333;
+  background: #333;
+}
+
+.wrapper .mail{
+  border-bottom: 10px solid red;
+  background: red;
+}
